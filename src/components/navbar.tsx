@@ -93,10 +93,16 @@ import schoolLogo from "../assets/mainschoollogo.png";
 function Navbar() {
   return (
     // <nav className="sticky top-0 z-50 w-full bg-blue-900>
-    <nav className="sticky top-0 z-50 w-full bg-blue-900/50 backdrop-blur-md text-white shadow-md">
+    // <nav className="sticky top-0 z-50 w-full bg-blue-900/30 backdrop-blur-md text-white shadow-md">
+    <nav className="sticky top-0 z-50 w-full bg-linear-to-r from-blue-950/80 via-slate-900/70 to-blue-950/80 backdrop-blur-md text-white shadow-lg">
       <div className="h-25 w-full mx-auto px-4 lg:px-6 py-3 flex items-center justify-between">
         {/* Logo Section */}
         <div className="flex items-center gap-3 shrink-0 min-w-fit">
+          <Link
+              to="/"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className=" flex items-center gap-3 shrink-0 min-w-fit transition duration-300"
+            >
           <img
             src={schoolLogo}
             alt="School Logo"
@@ -112,7 +118,10 @@ function Navbar() {
             <p className="text-sm text-yellow-300 font-medium">
               Excellence In Education
             </p>
+            
           </div>
+            </Link>
+
         </div>
 
         {/* Navigation Links */}
