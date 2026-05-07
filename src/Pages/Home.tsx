@@ -8,7 +8,6 @@ function Home() {
   return (
     <>
       <TopHeader />
-
       <Navbar />
       <HeroSec />
       <div id="about">

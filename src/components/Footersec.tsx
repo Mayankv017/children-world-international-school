@@ -1,4 +1,4 @@
-import schoolLogo from "../assets/schoollogo.png";
+import schoolLogo from "../assets/mainschoollogo.png";
 
 function FooterSec() {
   return (
@@ -29,7 +29,7 @@ function FooterSec() {
         </div>
 
         {/* Quick Links */}
-        <div className="lg:ml-10 xl:ml-16">
+        <div className="lg:ml-10 xl:ml-26 ">
           <h3 className="text-2xl font-semibold mb-5 text-yellow-400">
             Quick Links
           </h3>
@@ -70,10 +70,10 @@ function FooterSec() {
               rel="noopener noreferrer"
               className="hover:text-yellow-300 transition duration-300"
             >
-              <p>📍 Gurugram, Haryana, India</p>
+              <p>📍 Bhilwara, Rajasthan, India</p>
             </a>
             {/* <p>📍 Gurugram, Haryana, India</p> */}
-            <p>📞 +91 8440833999</p>
+            <p>📞 +91 74260 44908</p>
             <p>✉️ school@email.com</p>
           </div>
         </div>
