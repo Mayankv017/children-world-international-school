@@ -1,21 +1,20 @@
-import schoolLogo from '../assets/schoollogo.png'
+import schoolLogo from "../assets/schoollogo.png";
 
 function FooterSec() {
   return (
     <footer className="bg-blue-950 text-white pt-14 pb-6">
-      <div className=" max-w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-15 lg:gap-30">
         {/* School Info */}
-        <div>
-          <div className="w-auto flex items-center gap-3 mb-5">
+        <div className="max-w-105">
+          <div className="w-auto flex items-center gap-5 mb-5">
             <img
               src={schoolLogo}
               alt="School Logo"
-              className="h-60 w-50 object-contain bg-transparent shrink-0"
-              
+              className="h-40 w-auto object-contain bg-transparent shrink-0"
             />
 
             <div>
-              <h2 className="text-3xl font-bold leading-tight">
+              <h2 className="text-2xl lg:text-3xl font-bold leading-tight max-w-65">
                 CHILDREN WORLD
                 <br />
                 INTERNATIONAL SCHOOL
@@ -30,7 +29,7 @@ function FooterSec() {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="lg:ml-10 xl:ml-16">
           <h3 className="text-2xl font-semibold mb-5 text-yellow-400">
             Quick Links
           </h3>
@@ -65,8 +64,16 @@ function FooterSec() {
           </h3>
 
           <div className="space-y-4 text-gray-300 leading-7">
-            <p>📍 Gurugram, Haryana, India</p>
-            <p>📞 +91 9876543210</p>
+            <a
+              href="https://www.google.com/maps/place/Bhilwara,+Rajasthan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-yellow-300 transition duration-300"
+            >
+              <p>📍 Gurugram, Haryana, India</p>
+            </a>
+            {/* <p>📍 Gurugram, Haryana, India</p> */}
+            <p>📞 +91 8440833999</p>
             <p>✉️ school@email.com</p>
           </div>
         </div>
@@ -96,11 +103,11 @@ function FooterSec() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-white/10 mt-12 pt-6 text-center text-gray-400 text-sm px-6">
+      <div className="border-t border-white/15 mt-1 pt-1 text-center text-gray-600 text-sm px-6">
         © 2026 Children World International School. All Rights Reserved.
       </div>
     </footer>
-  )
+  );
 }
 
-export default FooterSec
+export default FooterSec;
