@@ -1,5 +1,7 @@
 
 
+import { Link } from 'react-router-dom'
+
 function TopHeader() {
   return (
     <div className="w-full bg-black text-white text-sm">
@@ -21,9 +23,12 @@ function TopHeader() {
           >
             📍 Bhilwara, Rajasthan
           </a>
-          <p className="hover:text-blue-900 pr-0 cursor-pointer transition duration-300">
+          <Link
+            to="/Login"
+            className="hover:text-yellow-300 pr-0 cursor-pointer transition duration-300"
+          >
             Faculty/Student Login
-          </p>
+          </Link>
         </div>
       </div>
     </div>

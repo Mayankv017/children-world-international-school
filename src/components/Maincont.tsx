@@ -52,7 +52,7 @@ function Maincont() {
           <img
             src={pic3}
             alt="Principal"
-            className="relative z-10 w-[350px] h-[450px] object-cover rounded-[40px] shadow-2xl border-8 border-white animate-bounce"
+            className="relative z-10 w-87.5 h-112.5 object-cover rounded-[40px] shadow-2xl border-8 border-white animate-bounce"
           />
         </div>
 

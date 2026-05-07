@@ -2,7 +2,7 @@ import schoolLogo from "../assets/schoollogo.png";
 
 function FooterSec() {
   return (
-    <footer className="bg-blue-950 text-white pt-14 pb-6">
+    <footer className="bg-blue-950 text-white pt-1 pb-6">
       <div className="max-w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-15 lg:gap-30">
         {/* School Info */}
         <div className="max-w-105">
@@ -22,7 +22,7 @@ function FooterSec() {
             </div>
           </div>
 
-          <p className="text-gray-300 leading-7">
+          <p className="text-gray-300 leading-5">
             Providing quality education with modern learning methods,
             discipline, creativity, and overall student development.
           </p>

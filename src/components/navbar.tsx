@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import schoolLogo from "../assets/schoollogo.png";
 function Navbar() {
   return (
@@ -25,12 +26,26 @@ function Navbar() {
 
         {/* Navigation Links */}
         <ul className="hidden lg:flex items-center gap-5 xl:gap-8 text-lg font-medium flex-1 justify-center px-6">
-          <li className="hover:text-yellow-300 cursor-pointer transition duration-300">
-            Home
+          <li>
+            <Link
+              to="/"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="hover:text-yellow-300 transition duration-300"
+            >
+              Home
+            </Link>
           </li>
 
-          <li className="hover:text-yellow-300 cursor-pointer transition duration-300">
-            About
+          <li>
+            <button
+              onClick={() => {
+                const section = document.getElementById("about")
+                section?.scrollIntoView({ behavior: "smooth" })
+              }}
+              className="hover:text-yellow-300 transition duration-300"
+            >
+              About
+            </button>
           </li>
 
           <li className="hover:text-yellow-300 cursor-pointer transition duration-300">
@@ -42,14 +57,28 @@ function Navbar() {
           </li>
 
           <li className="hover:text-yellow-300 cursor-pointer transition duration-300">
-            Contact
+            <button
+              onClick={() => {
+                const section = document.getElementById("contact")
+                section?.scrollIntoView({ behavior: "smooth" })
+              }}
+              className="hover:text-yellow-300 transition duration-300"
+            >
+              Contact
+            </button>
           </li>
         </ul>
 
         {/* CTA Button */}
-        <button className="hidden sm:block bg-yellow-400 text-black px-4 lg:px-5 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300 whitespace-nowrap">
-          Apply Now
-        </button>
+        <li>
+          
+          <Link
+            to="/applynow"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          ><button className="hidden sm:block bg-yellow-400 text-black px-4 lg:px-5 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300 whitespace-nowrap">
+            Apply Now
+          </button></Link>
+        </li>
       </div>
     </nav>
   );
