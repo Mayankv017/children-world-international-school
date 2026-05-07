@@ -70,7 +70,7 @@ function FooterSec() {
               rel="noopener noreferrer"
               className="hover:text-yellow-300 transition duration-300"
             >
-              <p>📍 Gurugram, Haryana, India</p>
+              <p>📍 Bhilwara, Rajasthan, India</p>
             </a>
             {/* <p>📍 Gurugram, Haryana, India</p> */}
             <p>📞 +91 8440833999</p>

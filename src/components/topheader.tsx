@@ -1,6 +1,4 @@
-
-
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function TopHeader() {
   return (
@@ -32,7 +30,7 @@ function TopHeader() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default TopHeader
+export default TopHeader;
