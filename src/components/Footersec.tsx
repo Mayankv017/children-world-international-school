@@ -3,14 +3,14 @@ import schoolLogo from '../assets/schoollogo.png'
 function FooterSec() {
   return (
     <footer className="bg-blue-950 text-white pt-14 pb-6">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className=" max-w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* School Info */}
         <div>
           <div className="w-auto flex items-center gap-3 mb-5">
             <img
               src={schoolLogo}
               alt="School Logo"
-              className="w-full h-24 rounded-full bg-white p-2 object-contain"
+              className="h-60 w-50 object-contain bg-transparent shrink-0"
               
             />
 

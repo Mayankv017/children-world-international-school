@@ -12,7 +12,15 @@ function TopHeader() {
 
         {/* Right Side */}
         <div className="flex items-center gap-4 font-medium">
-          <p>📍 Gurugram, Haryana</p>
+          <a
+            // href="https://maps.app.goo.gl/hjKPKGWo1G3woVpm9"
+            href="https://www.google.com/maps/place/Bhilwara,+Rajasthan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-yellow-300 transition duration-300"
+          >
+            📍 Bhilwara, Rajasthan
+          </a>
           <p className="hover:text-blue-900 cursor-pointer transition duration-300">
             Student Login
           </p>
