@@ -6,7 +6,7 @@ function TopHeader() {
       <div className="max-w-auto pb-1 pt-1 mx-auto px-6 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
         {/* Left Side */}
         <div className="flex items-center gap-4 font-medium">
-          <p>📞 +91 8440833999</p>
+          <p>📞+91 74260 44908</p>
           <p>✉️ school@email.com</p>
         </div>
 
